@@ -1,4 +1,4 @@
-{ stdenv, cmake, babble, openusd-minimal, tbb }:
+{ stdenv, cmake, babble, openusd-minimal, gcc }:
 stdenv.mkDerivation {
   name = "bbl-usd";
 
@@ -11,7 +11,7 @@ stdenv.mkDerivation {
   # Distinguishing between native build inputs (runnable on the host
   # at compile time) and normal build inputs (runnable on target
   # platform at run time) is important for cross compilation.
-  nativeBuildInputs = [ cmake babble openusd-minimal tbb ];
+  nativeBuildInputs = [ cmake gcc babble openusd-minimal ];
   buildInputs = [ ];
 
 }
