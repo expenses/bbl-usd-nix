@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1707187316,
-        "narHash": "sha256-QDksKHY0XYq94a34iIooHbUw+IsHaX6PQmsRxUstHaI=",
+        "lastModified": 1707190317,
+        "narHash": "sha256-PmOAH1Sdk5dFmSE0OqWljz1OTuVujGxRcxwFKz9lF44=",
         "owner": "expenses",
         "repo": "babble-nix",
-        "rev": "e7afe1c1805dac8e2d5e776491f4356108419880",
+        "rev": "b5ecce0864ccdad936adadd6514faf26fe8e93f8",
         "type": "github"
       },
       "original": {
