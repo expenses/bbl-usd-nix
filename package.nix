@@ -1,17 +1,13 @@
-{ stdenv, cmake, babble, openusd-minimal, gcc }:
+{ stdenv, cmake, babble, openusd-minimal, gcc, vulkan-sdk, vulkan-loader, xorg }:
 stdenv.mkDerivation {
   name = "bbl-usd";
 
   src = fetchGit {
     url = "https://github.com/expenses/bbl-usd";
-    rev = "8229fd0296e6a1d4eb66b7c2aecbf7e257c9a370";
+    rev = "856e645e87cea12db53ad6a2dd3b9ed155a2765f";
     ref = "usd-imaging+ar-resolver";
   };
 
-  # Distinguishing between native build inputs (runnable on the host
-  # at compile time) and normal build inputs (runnable on target
-  # platform at run time) is important for cross compilation.
-  nativeBuildInputs = [ cmake gcc babble openusd-minimal ];
-  buildInputs = [ ];
-
+  nativeBuildInputs = [ cmake gcc babble ];
+  buildInputs = [ openusd-minimal vulkan-sdk vulkan-loader xorg.libX11 ];
 }

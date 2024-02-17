@@ -6,7 +6,7 @@
 
     babble = { url = "github:expenses/babble-nix"; };
 
-    openusd-minimal = { url = "github:expenses/openusd-minimal-nix"; };
+    openusd-minimal = { url = "github:expenses/openusd-minimal-nix/vulkan-support"; };
   };
 
   outputs = inputs@{ flake-parts, babble, openusd-minimal, ... }:
@@ -17,7 +17,8 @@
         packages = {
           default = pkgs.callPackage ./package.nix {
             babble = babble.packages.${system}.default;
-            openusd-minimal = openusd-minimal.packages.${system}.default;
+            openusd-minimal = openusd-minimal.packages.${system}.default.override {vulkanSupport = true;};
+            vulkan-sdk = openusd-minimal.packages.${system}.vulkan-sdk;
           };
         };
       };
