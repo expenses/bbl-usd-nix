@@ -90,10 +90,7 @@
     "materialx": {
       "inputs": {
         "flake-parts": "flake-parts_4",
-        "nixpkgs": [
-          "openusd-minimal",
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1707553506,
@@ -199,11 +196,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1708118438,
-        "narHash": "sha256-kk9/0nuVgA220FcqH/D2xaN6uGyHp/zoxPNUmPCMmEE=",
+        "lastModified": 1708296515,
+        "narHash": "sha256-FyF489fYNAUy7b6dkYV6rGPyzp+4tThhr80KNAaF/yY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5863c27340ba4de8f83e7e3c023b9599c3cb3c80",
+        "rev": "b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
         "type": "github"
       },
       "original": {
@@ -215,16 +212,32 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1708003310,
-        "narHash": "sha256-At+ywTnYPcpcboZ3DFA1q6t4hS8UFAtH5XXw91gw+zg=",
+        "lastModified": 1708296515,
+        "narHash": "sha256-FyF489fYNAUy7b6dkYV6rGPyzp+4tThhr80KNAaF/yY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1708490553,
+        "narHash": "sha256-GMuLR5ygQX34zbvxPNMCkyNAhqhJ/dEzjpY4rLYuIUc=",
         "owner": "expenses",
         "repo": "nixpkgs",
-        "rev": "f6725ead0db096814b6e5ee76838db9291972858",
+        "rev": "1d801d211ff2cf5ad956e619135e01e4aaedfe0c",
         "type": "github"
       },
       "original": {
         "owner": "expenses",
-        "ref": "mingw-shaderc",
+        "ref": "my-patches-for-openusd",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -233,14 +246,14 @@
       "inputs": {
         "flake-parts": "flake-parts_3",
         "materialx": "materialx",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1708300615,
-        "narHash": "sha256-shVUeMhFCetVn++ELIw9fAAv6RJsfFGpaCkwO9vQ7WQ=",
+        "lastModified": 1708490949,
+        "narHash": "sha256-mgdYpBK+FgKo+i+WzzIYocz5xJ/jOBKDb1sVRgJFjKE=",
         "owner": "expenses",
         "repo": "openusd-minimal-nix",
-        "rev": "54b51f93c29ed68bce8dc63199be33a18aa0a8f6",
+        "rev": "becd4c1450d0c9f33b215cb6ee9f657e38b8ade0",
         "type": "github"
       },
       "original": {
